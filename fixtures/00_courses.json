@@ -1,0 +1,11 @@
+[
+  {
+    "model": "materials.course",
+    "pk": 2,
+    "fields": {
+      "title": "Математика 11 класс",
+      "image": "",
+      "description": "Математика за 1 класс и подготовка к ЕГЭ"
+    }
+  }
+]
