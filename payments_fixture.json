@@ -16,7 +16,7 @@
     "pk": 2,
     "fields": {
       "user": 1,
-      "date": "2024-06-27",
+      "date": "2023-06-27",
       "course": null,
       "lesson": 2,
       "payment_amount": 500,
