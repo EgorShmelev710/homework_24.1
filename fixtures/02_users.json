@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$720000$708lbQQpWiPtovRHmhw7ms$owjNeLJS/M3gSl9zyS0c5EXpJTf62Es9R9+ZBjxd5eM=",
-      "last_login": null,
+      "last_login": "2024-06-30T21:11:23.999Z",
       "is_superuser": true,
       "first_name": "Admin",
       "last_name": "SkyPro",
@@ -12,6 +12,88 @@
       "is_active": true,
       "date_joined": "2024-06-28T20:04:45.574Z",
       "email": "admin@sky.pro",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$pQz6uuShoTkeHK9eqDfv1p$jr8mTz0Ap60rpkcTmRPQ0vV58KbzJVCA8FxTPhJyW6g=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-29T17:20:49.385Z",
+      "email": "proba@gmail.com",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$SlHq7LIyGtqPPrZ1R1DHeT$/gj2M1XY5YH05TIlZFXSRtMlxt1QHwy5nmDEbBQzVhY=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-29T18:05:35.381Z",
+      "email": "test1@gmail.com",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$cPXhcXqsX4L0b3iACjg2oD$0TbUSwMje34UqNIw6QacgneRcpKpK1ngxGdSvEYvknY=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-30T21:16:27Z",
+      "email": "manager@gmail.com",
+      "phone": null,
+      "city": null,
+      "avatar": "",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$8VV6Boqe4ofaNtiLk3vkPN$87snzN2MMutrx+ZM5r4sKdhYpbLzsMHyPXhS814+ilw=",
+      "last_login": null,
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-07-01T16:00:20.314Z",
+      "email": "pro@gmail.com",
       "phone": null,
       "city": null,
       "avatar": "",
