@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'corsheaders',
+    'django_celery_beat',
 
     'users',
     'materials',
@@ -117,7 +118,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
@@ -154,3 +155,13 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 STRIPE_API_KEY = os.getenv('STRIPE_API_KEY')
+
+CELERY_BROKER_URL = os.getenv('CELERY_BROKER_URL')
+
+CELERY_RESULT_BACKEND = os.getenv('CELERY_RESULT_BACKEND')
+
+CELERY_TIMEZONE = "America/Argentina/Buenos_Aires"
+
+CELERY_TASK_TRACK_STARTED = True
+
+CELERY_TASK_TIME_LIMIT = 30 * 60
