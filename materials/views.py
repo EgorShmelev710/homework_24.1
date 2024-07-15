@@ -7,6 +7,7 @@ from materials.models import Course, Lesson, Subscription
 from materials.paginators import MaterialsPaginator
 from materials.permissions import IsOwner
 from materials.serializers import CourseSerializer, LessonSerializer, SubscriptionSerializer
+from materials.tasks import update_notification
 from users.permissions import IsManager, IsNotManager
 
 
@@ -28,6 +29,11 @@ class CourseViewSet(viewsets.ModelViewSet):
         lesson = serializer.save()
         lesson.owner = self.request.user
         lesson.save()
+
+    def perform_update(self, serializer):
+        instance = serializer.save()
+        update_notification.delay(instance.pk)
+        return instance
 
 
 class LessonCreateAPIView(generics.CreateAPIView):
